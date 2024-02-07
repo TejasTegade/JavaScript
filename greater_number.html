@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater Number</title>
+</head>
+<script>
+    function a1() {
+        a = document.form1.text1.value
+        b = document.form1.text2.value
+        c = document.form1.text3.value
+        if (a >= b && a >= c) {
+            document.write(" A is bigger")
+        }
+        else if
+            (b >= a && b >= c) {
+            document.write("B is Bigger")
+        }
+        else {
+            document.write("C is bigger")
+        }
+    }
+</script>
+
+<body>
+    <form name="form1">
+        Enter The first Number:<input type="text" name="text1" value="">
+        <br>
+        Enter The second Number:<input type="text" name="text2" value="">
+        <br>
+        Enter The Third Number:<input type="text" name="text3" value="">
+        <br>
+        <input type="button" value="click here" onclick="a1()">
+    </form>
+</body>
+
+</html>

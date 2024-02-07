@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find leap year</title>
+</head>
+<script>
+    function a1()
+    {
+        a=document.form1.text1.value
+        if (a%4==0)
+        {
+            document.write("Its a leap year")
+        }
+        else
+        {
+            document.write("Not a leap year")
+        }
+    }
+</script>
+<body>
+    <form name="form1">
+        Enter The Year:<input type="text" name="text1" value="">
+        <input type="button" value="click here" onclick="a1()">
+    </form>
+</body>
+</html>

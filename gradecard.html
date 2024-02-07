@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade card</title>
+</head>
+<script>
+    function a1() {
+        a = document.form1.text1.value
+        b = document.form1.text2.value
+        c = document.form1.text3.value
+        d = document.form1.text4.value
+        e = document.form1.text5.value
+
+        f = eval(a) + eval(b) + eval(c) + eval(d) + eval(e)
+        alert("Total marks obtain is "+ f)
+        
+        g = f / 500 * 100
+        alert("Percentage is "+ g)
+
+        if (g>=75)
+        {
+        alert("Distinction")
+        }
+
+        else if (g<75 && g>=65)
+        {
+            alert("A grade")
+        }
+
+        else if (g<65 && g>=55)
+        {
+            alert("B grade")
+        }
+
+        else if (g<55 && g>=45)
+        {
+            alert("C grade")
+        }
+
+        else 
+        {
+            alert("D grade")
+        }
+    }
+</script>
+
+<body>
+    <form name="form1">
+        Enter Marks of Marathi:<input type="text" name="text1" value="">
+        <br>
+        <br>
+        Enter Marks of Hindi:<input type="text" name="text2" value="">
+        <br>
+        <br>
+        Enter Marks of English:<input type="text" name="text3" value="">
+        <br>
+        <br>
+        Enter Marks of Maths:<input type="text" name="text4" value="">
+        <br>
+        <br>
+        Enter Marks of History:<input type="text" name="text5" value="">
+        <br>
+        <br>
+        <input type="button" value="click here for score" onclick="a1()">
+    </form>
+
+</body>
+
+</html>

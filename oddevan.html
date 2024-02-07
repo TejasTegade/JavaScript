@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd evan no</title>
+</head>
+<script>
+    function a1()
+    {
+        a=document.form1.text1.value
+        if(a%2== 0)
+        {
+            document.write("Evan Number")
+        }
+        else
+        {
+            document.write("odd number")
+        }
+    }
+</script>
+<body>
+    <form name="form1">
+        Enter the Number:<input type="text" name="text1" value=" ">
+        <br>
+        <input type="button" value="Find odd or Evan" onclick="a1()">
+    </form>
+    
+</body>
+</html>
